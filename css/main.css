@@ -1,3 +1,96 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'HelveticaNeueBlack';
+    src: local("☺"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: local("☺"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueItalic';
+    src: local("☺"), url("../fonts/HelveticaNeueCyr-Italic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: local("☺"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueMedium';
+    src: local("☺"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueThin';
+    src: local('☺'), url('../fonts/HelveticaNeueCyr-Thin.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLightItalic';
+    src: local("☺"), url("../fonts/HelveticaNeueCyr-LightItalic.woff") format("woff"), url("../fonts/HelveticaNeueCyr-LightItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+
 img {
     width: auto;
     height: auto;
@@ -170,7 +263,7 @@ button {
 .main-screen {
     min-height: 1px;
     height: 700px;
-    background-image: url("../img/main-screen-bg.jpg");
+    background-image: url("../img/main-screen-bg.webp");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -373,7 +466,8 @@ button {
 
 
 .reason__img_safe {
-    width: 48px; height: 48px;
+    width: 48px;
+    height: 48px;
     background-position: -5px -75px;
 }
 
@@ -561,7 +655,8 @@ button {
 }
 
 .advantages__img_garantie {
-    width: 60px; height: 54px;
+    width: 60px;
+    height: 54px;
     background-position: -135px -5px;
 }
 

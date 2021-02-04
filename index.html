@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/screen.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -56,7 +54,7 @@
                 <p class="value">648х488</p>
             </div>
             <div class="description">
-                <img src="img/about-1.jpg" alt="">
+                <img src="img/about-1.webp" alt="">
             </div>
         </div>
         <div class="column-block">
@@ -77,7 +75,7 @@
                 <p class="value">черный, серый</p>
             </div>
             <div class="description">
-                <img src="img/about-2.jpg" alt="">
+                <img src="img/about-2.webp" alt="">
             </div>
         </div>
         <div class="column-block last">
@@ -92,7 +90,7 @@
                 </p>
             </div>
             <div class="description">
-                <img src="img/about-3.jpg" alt="">
+                <img src="img/about-3.webp" alt="">
             </div>
         </div>
         <button class="btn-order centred">Заказать</button>
@@ -150,16 +148,16 @@
         <div class="left-block">
             <p>ремонт бампера стоит от</p>
             <p class="cost"><span class="yellow">6000</span> рублей</p>
-            <img src="img/girl-in-car.jpg" alt="" class="full-width">
-            <img src="img/broken-car1.jpg" alt="" class="half-width">
-            <img src="img/broken-car2.jpg" alt="" class="half-width">
+            <img src="img/girl-in-car.webp" alt="" class="full-width">
+            <img src="img/broken-car1.webp" alt="" class="half-width">
+            <img src="img/broken-car2.webp" alt="" class="half-width">
         </div>
         <div class="right-block">
             <p>Видеопарктроник с подарком стоит</p>
             <p class="cost"><span class="yellow">3990</span> рублей</p>
-            <img src="img/product.jpg" alt="" class="full-width small-height-fix">
+            <img src="img/product.webp" alt="" class="full-width small-height-fix">
             <span class="plus yellow">+</span>
-            <img src="img/gift.jpg" alt="" class="full-width">
+            <img src="img/gift.webp" alt="" class="full-width">
         </div>
         <button class="btn-order centred">Заказать</button>
     </div>
@@ -170,7 +168,7 @@
         <img src="img/arrow-left.png" alt="" class="arrow-left">
         <div class="review-slider">
             <div class="slide">
-                <img src="img/review1.jpg" alt="" class="main-review-img">
+                <img src="img/review1.webp" alt="" class="main-review-img">
                 <p class="review-text">
                     Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
                     дизайн
@@ -186,7 +184,7 @@
                     зеркало
                     любой машины, вообщем то что доктор прописал!
                 </p>
-                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                <div class="review-author"><img src="img/review-ava1.webp" alt="" class="ava"><b>Константин</b><i>г.
                     Днепропетровск</i></div>
             </div>
         </div>
@@ -248,9 +246,9 @@
         <h2 class="h2">закажите свой видеопарктроник <span class="yellow">до конца дня</span>
             И <span class="yellow">получите в подарок</span> антибликовое стекло</h2>
         <div class="left-block">
-            <img src="img/product-reverse.jpg" alt="">
+            <img src="img/product-reverse.webp" alt="">
             <span class="plus">+</span>
-            <img src="img/gift-reverse.jpg" alt="">
+            <img src="img/gift-reverse.webp" alt="">
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -271,18 +269,17 @@
 
     </div>
 </footer>
-<script src="lib/plugins.js"></script>
 <script>
     // 2. This code loads the IFrame Player API code asynchronously.
-    var tag = document.createElement('script');
+    let tag = document.createElement('script');
 
     tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
+    let firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     // 3. This function creates an <iframe> (and YouTube player)
     //    after the API code downloads.
-    var player;
+    let player;
 
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('video', {
@@ -304,7 +301,7 @@
     // 5. The API calls this function when the player's state changes.
     //    The function indicates that when playing a video (state=1),
     //    the player should play for six seconds and then stop.
-    var done = false;
+    let done = false;
 
     function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
